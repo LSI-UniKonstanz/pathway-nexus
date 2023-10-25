@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="vanted-libraries">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../vanted-libraries" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../vanted-libraries" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../vanted-libraries" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../vanted-libraries" recursive="false" type="SOURCES" />
+  </library>
+</component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE plugin
+        PUBLIC "-//GRAFFITI/DTD Plugin Descriptin 1.0//EN"
+        "http://www.graffiti.org/dtd/1.0/plugin.dtd">
+
+<plugin>
+    <author>Philipp Eberhard, Benjamin Moser, Martin Kern</author>
+    <description>Quickly filter through large amounts of experimental data using a compound-pathway matrix.</description>
+    <plugindesc>
+        <name>Pathway Nexus</name>
+        <main>org.vanted.addons.matrix.MatrixAddon</main>
+        <version>1.0</version>
+        <compatibility>2.7.1</compatibility>
+        <available>https://github.com/LSI-UniKonstanz/pathway-nexus</available>
+    </plugindesc>
+</plugin>
