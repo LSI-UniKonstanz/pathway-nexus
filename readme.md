@@ -28,5 +28,5 @@ Jar-files can be installed from users by starting VANTED, choosing sidepanel "he
 
 ## Additional Materials
 
-- **Example data file** that can be used for testing can be found in `/data`
+- **Example data file** that can be used for testing can be found on the [PathwayNexus website](https://www.cls.uni-konstanz.de/software/pathway-nexus/getting-started/)
 
