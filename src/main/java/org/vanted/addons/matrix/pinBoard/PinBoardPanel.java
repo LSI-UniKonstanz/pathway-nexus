@@ -155,9 +155,13 @@ public class PinBoardPanel extends JScrollPane {
 		String[] chartTypes = {"Line chart", "Bar chart (3D)", "Bar chart (flat)", "Pie chart", "No chart"};
 		JComboBox<String> selectChartType = new JComboBox<> (chartTypes);
 		selectChartType.addActionListener(e -> {
-//			JComboBox<String> cb = (JComboBox<String>) e.getSource();
+//        JComboBox<String> cb = (JComboBox<String>) e.getSource();
 			String ct = (String) selectChartType.getSelectedItem();
-			this.chartType = this.chartTypeTranslator(Objects.requireNonNullElse(ct, "Line chart"));
+			if (ct == null){
+				this.chartType = this.chartTypeTranslator("Line chart");
+			} else {
+				this.chartType = this.chartTypeTranslator(ct);
+			}
 			this.rebuild();
 		});
 		toolpanel.add(selectChartType, this.setPosition(0, 1, 2, 1));
