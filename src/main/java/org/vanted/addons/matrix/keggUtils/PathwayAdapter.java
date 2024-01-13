@@ -68,7 +68,9 @@ public class PathwayAdapter extends JFrame {
 			String keggResponse = (String) restServiceFind.makeRequest(pwTitle, MediaType.TEXT_PLAIN_TYPE, String.class);
 			DefaultListModel<String> model = (DefaultListModel<String>) this.pathwaySearch.getModel();
 			model.removeAllElements();
-			model.addAll(this.getPathwayArray(keggResponse));
+			for(String pw: this.getPathwayArray(keggResponse)) {
+				model.addElement(pw);
+			}
 			pathwaySearch.repaint();
 			searchPanel.updateUI();
 			this.pack();
