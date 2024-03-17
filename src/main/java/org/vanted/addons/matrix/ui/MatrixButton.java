@@ -19,7 +19,9 @@ public class MatrixButton extends JButton {
 	 */
 	public MatrixButton() {
 		super();
-		
+		for (int i = 0; i < super.getAncestorListeners().length; i++) {
+			super.removeAncestorListener(super.getAncestorListeners()[i]);
+		}
 		constraints =  new GridBagConstraints();
 		constraints.fill = GridBagConstraints.BOTH;
 		constraints.weightx = 0.5;
